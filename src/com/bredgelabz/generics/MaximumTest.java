@@ -58,4 +58,28 @@ public class MaximumTest {
 		float result = obj.largestFloat(20f, 30f, 40f);
 		assertEquals(40f, result,DELTA);
 	}
+	/*
+	 * TC1 : Given String at 1st Position return the Same String
+	 */
+	@Test
+	public void largestStringAtFirstPos(){
+		String result = obj.largestString("Banana", "Apple", "Peach");
+		assertEquals("Banana", result);
+	}
+	/*
+	 * TC2 : Given Max String at 2nd Position return the Same String
+	 */
+	@Test
+	public void largestStringAtSecondPos(){
+		String result = obj.largestString("Apple", "Banana", "Peach");
+		assertEquals("Banana", result);
+	}
+	/*
+	 * TC3 : Given Max String at 3rd Position return the Same String
+	 */
+	@Test
+	public void largestStringAtThirdPos(){
+		String result = obj.largestString("Apple", "Peach", "Banana");
+		assertEquals("Banana", result);
+	}
 }
